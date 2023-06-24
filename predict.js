@@ -13,9 +13,9 @@ function modelLoaded() {
 
 async function makePrediction() {
     const predictionValues = {
-        storage: parseInt(storageInput.value, 10),
-        resoloution: parseInt(resoloutionInput.value, 10),
-        weight: parseInt(weightInput.value, 10)
+        storage: parseInt(storageInput.value),
+        resoloution: parseInt(resoloutionInput.value),
+        weight: parseInt(weightInput.value)
     }
 
     const results = await nn.predict(predictionValues);
